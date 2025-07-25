@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+}
+body{
+    background-color: #1F242D;
+}
+header{
+    padding: 30px 0;
+    background-color: #1F242D;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul :hover{
+    color: #00EEFF;
+}
+.n{
+    color: white;
+}
+.menu-btn{
+    font-size: 24px;
+    color: white;
+    background-color: inherit;
+    border: none;
+    display: none;
+}
+.hero{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.hero-text{
+    width: 630px;
+}
+
+.hero h2{
+    font-size: 32px;
+    color: white;
+}
+.hero h1{
+    font-size: 56px;
+    color: white;
+}
+span{
+    color: #00EEFF;
+}
+
+.hero-text p{
+    margin: 15px 0;
+    font-size: 18px;
+    color: white;
+} 
+
+.icon{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #00EEFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn{
+    padding: 10px 25px;
+    border-radius: 30px;
+    background-color: #00EEFF;
+    border: none;
+    font-weight: 700;
+    box-shadow: 0px 0px 8.8px 0px #00EEFF;
+}
+.hero-img{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border: 2px solid #00EEFF;
+    overflow: hidden;
+    animation-name: aylan;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.hero-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.service{
+    padding: 50px 0;
+}
+.service h2{
+    text-align: center;
+    font-size: 36px;
+    color: white;
+}
+.card{
+    width: 380px;
+    height: 369px;
+    padding: 32px;
+    text-align: center;
+    background-color: #323946;
+    border: 2px solid #1F242D;
+    border-radius: 20px;
+    color: white
+}
+.card p{
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.card h3{
+    font-size: 28px;
+    margin-top: 15px;
+}
+
+.ota{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.Project{
+    padding: 70px 0;
+    background-color: #323946;
+}
+.Project h2{
+ text-align: center;
+ color: white;
+ font-size: 36px;
+}
+.rasm-ota{
+    padding: 0 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.rasm-ota img{
+    border-radius: 20px;
+}
+.contacts{
+    padding: 50px 0;
+}
+.contacts h2{
+    text-align: center;
+    font-size: 36px;
+    color: white;
+}
+.input-box{
+    margin: 30px auto;
+    width: 616px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+input{
+    width: 301px;
+    height: 47px;
+    padding: 13px;
+    border-radius: 7px;
+    background-color: #323946;
+    border: none;
+}
+textarea{
+    width: 616px;
+    height: 236px;
+    padding: 13px;
+    border-radius: 7px;
+    background-color: #323946;
+    border: none;
+}
+
+footer{
+    padding: 24px 0;
+    color: white;
+    background-color: #323946;
+}
+
+footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@keyframes aylan {
+    form{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@media(max-width:768px){
+    nav{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }
+    header{
+        padding: 30px;
+    }
+    .ota{
+        justify-content: center;
+    }
+    .input-box{
+        width: 90%;
+    }
+}
